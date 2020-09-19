@@ -1,0 +1,23 @@
+
+.acerca-p{
+    margin: 2em;
+    text-align: justify;
+    font-size: 1em;
+    
+   .contenedorp{
+       box-sizing: border-box;
+       padding: 20px;
+       background-color: rgb(240, 245, 245);
+       border-radius: 20px;
+       box-shadow: 2px 2px 2px #949292;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .acerca{
+        margin: 0px 67px 10px 67px;
+        .acerca-p{
+            margin: 30px 60px 30px 60px;
+        }
+    }
+}

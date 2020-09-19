@@ -1,0 +1,127 @@
+.icon-menu{
+    position: absolute;
+    top: 5%;
+    left: 65%;
+    z-index: 10;
+    position: fixed;
+}
+
+/* .icon-menu img{
+    position: relative;
+    left: 250px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+} */
+
+
+/* Estilos para el contenedor */
+.cont-menu{
+    background-color: rgba(40, 55, 92, 0.801);
+    box-shadow: 2px 0px 5px 2px rgba(85, 82, 82, 0.514);
+    width: 212px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+    position: fixed;
+    z-index: 10;
+    border-radius: 0 0 30px 0;
+}
+
+.logoHam{
+    position: absolute;
+    z-index: 50;
+    width: 80px;
+    height: 90px;
+    top: 8px;
+    left: 50px;
+}
+
+/* para agregar js*/
+.active{
+    transform: translate(-600px);
+}
+
+.opacity{
+    background-color: rgba(0,0,0,0,0.5);
+    transition: all .5s ease;
+}
+
+/* listado menu */
+.cont-menu ul{
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.ulPrincipal li{
+    color: white;
+    display: block;
+    font-size:20px;
+    text-decoration: none;
+    padding:10px 50px;
+    cursor: pointer;
+}
+
+.cont-menu ul li:hover{
+    background-color: #369bda;
+    color: rgb(42, 42, 42);
+    border-radius: 10px 0px 10px 0px;
+}
+
+@media screen and (min-width:576px) {
+    .icon-menu{
+       left: 75%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .icon-menu{
+        left: 78%;
+        top: 3%;
+     }
+}
+
+@media screen and (min-width:992px){
+    .icon-menu{
+        left: 80%;
+        position: absolute;
+    }
+    .icon-menu img{
+        cursor: wait; 
+        width: 0px;
+        height: 0px;  
+    }
+    .cont-menu{
+        background-color: rgba(40, 55, 92, 0.801);
+        box-shadow: none;
+        width: 83.5%;
+        height: 90px;
+        position: absolute;
+        top: 0;
+        left: 10%;
+       /*  margin: 0px 20px 0px 20px; ; */
+    }
+
+    .cont-menu img{
+        width: 0px;
+        height: 0px;
+    }
+    .active{
+        transform: none;
+    }
+    .ulPrincipal{
+        position: absolute;
+        top: -70px;
+        left: 20%;
+    }
+    .ulPrincipal li{
+        display: inline;
+        text-align: center;
+        padding: 35px;
+    }
+    .cont-menu ul li:hover{
+       padding: 8px;
+    }
+}

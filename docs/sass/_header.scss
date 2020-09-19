@@ -1,0 +1,29 @@
+.header{
+    .logo{
+        position: absolute;
+        z-index: 50;
+        width: 80px;
+        height: 90px;
+        top: 8px;
+        left: 50px;
+    }
+}
+
+.a-p{
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px $texto2;
+    .colorMenu{
+        color: $texto2;
+    }
+}
+
+@media screen and (min-width:992px){
+    .header{
+        margin: 0px 67px 10px 67px;
+        .logo{
+            left: 110px;
+        }
+    }
+}
+

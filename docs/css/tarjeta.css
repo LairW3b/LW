@@ -1,0 +1,170 @@
+.skills{
+    margin-top: 10px;
+}
+.titulos{
+    background-image: url(../img/tiraPC.png);
+    min-height: 70px;
+    box-shadow: 4px 4px 2px rgba(85, 84, 84, 0.658);
+}
+
+.titulo{
+    display: grid;
+    align-self: center;
+    background-color: #0095F0;   
+    width: 200px;
+    height: 50px;
+    border-radius: 0px 0px 20px 0px;
+}
+.titulo h1{
+    color: white;
+    font-size: 25px;
+    margin-left: 2%;
+}
+
+/* TARJETAS */
+.contenedorTarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+    gap: 10px;
+    padding: 6%;
+    
+}
+
+.targeta{
+    display: grid;
+    grid-template-rows: 110px 40px;
+    justify-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(40, 55, 92);
+    border-radius: 10px;
+    flex: 1 1 150px;
+}
+
+.logoT{
+    filter: drop-shadow(2px 2px 2px rgba(187, 186, 186, 0.7)); 
+    margin-top: 15px;
+}
+
+.diseñoC{
+    width: 90px;
+    height: 90px;   
+}
+
+.diseño{
+    width: 135px;
+    height: 135px;
+}
+
+.barra{
+    display: grid;
+    align-self: center;
+    width: 130px;
+    height: 21px;
+    background-color: coral;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.barraInterna{
+    display: grid;
+    align-self: center;
+    width: 100px;
+    height: 21px;
+    background-color: rgb(80, 205, 255);
+    border-radius: 10px;
+    border-style: none;
+}
+
+.barraInterna span{
+    color: white;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-left: 60px;
+}
+
+.barraP{
+    font-size: 0px;
+}
+
+.descripcionP{
+    background-color: #c4c4c4;
+}
+
+@media screen and (min-width:992px){
+    .skills{
+        margin: 0px 67px 10px 67px;
+    }
+
+    .titulos{
+        min-height: 100px;
+    }
+
+    .titulo{  
+        width: 300px;
+        height: 80px;
+    }
+    .titulo h1{
+        color: white;
+        font-size: 2.1em;
+        margin-left: 8%;
+    }
+    
+    .contenedorTarjetas{
+       /*  display: flex;
+        flex-wrap: nowrap; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+       /*  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+       justify-content: center;
+        gap: 20px;
+        padding: 6%;
+        
+    }
+    
+    .targeta{
+        display: grid;
+        grid-template-rows: 200px 100px;
+        width: 250px;
+        height: 300px;
+    }
+
+    .logoT{
+        margin-top: 10px;
+    }
+
+    .logoT img{
+        width: 110px;
+        height: 200px;
+    }
+
+    .barra{
+        width: 225px;
+        height: 85px;
+        background-color: coral;
+    }
+
+    .barraInterna{
+        width: 225px;
+        height: 85px;
+        background-color: coral;
+        border-radius: 10px;
+        border-style: none;
+    }
+    .barraInterna span{
+        font-size: 0px;
+    }
+    
+    .barraP{
+        font-size: 15px;
+        text-align: center;
+        color: aliceblue;
+    }
+
+    .diseñoC{
+        width: 100px;
+        height: 100px;  
+    }
+}

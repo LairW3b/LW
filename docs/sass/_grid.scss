@@ -1,0 +1,13 @@
+/*.header{grid-template-areas: header;}
+.dw{grid-template-areas: dw;}
+.skills{grid-template-areas: skills;}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+        'header header header '
+        'dw dw dw'
+    ;
+    background-color: $principal;
+}
+ */
