@@ -25,6 +25,8 @@
   text-shadow: 2px 2px 2px #D04678; }
   .a-p .colorMenu {
     color: #D04678; }
+  .a-p:hover {
+    color: #D04678; }
 
 @media screen and (min-width: 992px) {
   .header {
@@ -67,6 +69,12 @@
     list-style: none;
     justify-content: end;
     padding: 10px 20px 0px 0px; }
+  .start .iconS {
+    font-size: 3em;
+    color: #0095F0;
+    text-decoration: none; }
+    .start .iconS:hover {
+      color: #D04678; }
 
 @media screen and (min-width: 700px) {
   .start {
@@ -80,7 +88,7 @@
   grid-template-columns: 160px auto;
   justify-items: center;
   align-items: center;
-  background-color: #0095F0; }
+  background-color: #28375C; }
   .foot p {
     font-size: 4.5vw;
     text-align: center;
@@ -94,6 +102,12 @@
     padding: 10%; }
     .foot .footerUL img {
       width: 50px; }
+  .foot .icon {
+    font-size: 3em;
+    color: #e2e2e2;
+    text-decoration: none; }
+    .foot .icon:hover {
+      color: #D04678; }
 
 @media screen and (min-width: 576px) {
   .foot {
@@ -193,14 +207,14 @@
       border-radius: 10px; }
     .portafolio .contentPortafolio .contenedorProyecto .descripcion {
       color: white;
-      text-shadow: 2px 4px 4px #696666;
+      text-shadow: 2px 4px 4px #444343;
       text-align: center; }
       .portafolio .contentPortafolio .contenedorProyecto .descripcion a {
         text-decoration: none;
         color: white;
         font-size: 5vw; }
 .portafolio .btnMore {
-  background-color: #3c6e9e;
+  background-color: #122a68;
   width: 500px;
   height: 50px;
   margin: 30px;

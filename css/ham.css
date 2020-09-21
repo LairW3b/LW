@@ -64,11 +64,11 @@
     cursor: pointer;
 }
 
-.cont-menu ul li:hover{
+/* .cont-menu ul li:hover{
     background-color: #369bda;
     color: rgb(42, 42, 42);
     border-radius: 10px 0px 10px 0px;
-}
+} */
 
 @media screen and (min-width:576px) {
     .icon-menu{
@@ -121,7 +121,7 @@
         text-align: center;
         padding: 35px;
     }
-    .cont-menu ul li:hover{
+    /* .cont-menu ul li:hover{
        padding: 8px;
-    }
+    } */
 }

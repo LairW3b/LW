@@ -38,13 +38,13 @@
     justify-items: center;
     width: 150px;
     height: 150px;
-    background-color: rgb(40, 55, 92);
+    /* background-color: #122a68; */
     border-radius: 10px;
     flex: 1 1 150px;
 }
 
 .logoT{
-    filter: drop-shadow(2px 2px 2px rgba(187, 186, 186, 0.7)); 
+    filter: drop-shadow(4px 4px 4px rgba(22, 17, 17, 0.7)); 
     margin-top: 15px;
 }
 
@@ -64,6 +64,7 @@
     width: 130px;
     height: 21px;
     background-color: coral;
+    box-shadow: 4px 4px 4px rgba(22, 17, 17, 0.7);
     border-radius: 10px;
     border-style: none;
 }
@@ -73,7 +74,7 @@
     align-self: center;
     width: 100px;
     height: 21px;
-    background-color: rgb(80, 205, 255);
+    background-color: #50cdff;
     border-radius: 10px;
     border-style: none;
 }
@@ -86,13 +87,13 @@
 }
 
 .barraP{
-    font-size: 0px;
+    font-size: 0;
 }
 
-.descripcionP{
+/* .descripcionP{
     background-color: #c4c4c4;
 }
-
+ */
 @media screen and (min-width:992px){
     .skills{
         margin: 0px 67px 10px 67px;
@@ -158,9 +159,10 @@
     }
     
     .barraP{
-        font-size: 15px;
+        font-size: 1.5vw;
+        text-shadow: 2px 2px 4px  rgba(22, 17, 17, 0.7);
         text-align: center;
-        color: aliceblue;
+        color: #e2e2e2;
     }
 
     .diseñoC{

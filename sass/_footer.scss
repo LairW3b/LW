@@ -3,7 +3,7 @@
     grid-template-columns: 160px auto;
     justify-items: center;
     align-items: center;
-    background-color: $prin2;
+    background-color: $principal;
     p{
         font-size: 4.5vw;
         text-align: center;
@@ -19,6 +19,15 @@
        img{
            width: 50px;
        }
+    }
+
+    .icon{
+        font-size: 3em;
+        color: $base;
+        text-decoration: none;
+        &:hover{
+            color:$texto2;
+        }    
     }
 
 }

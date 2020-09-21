@@ -16,6 +16,9 @@
     .colorMenu{
         color: $texto2;
     }
+    &:hover{
+        color: $texto2;
+    }
 }
 
 @media screen and (min-width:992px){
