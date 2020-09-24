@@ -121,7 +121,8 @@
 .acerca-p {
   margin: 2em;
   text-align: justify;
-  font-size: 1em; }
+  font-size: 1em;
+  color: #6d6b6b; }
   .acerca-p .contenedorp {
     box-sizing: border-box;
     padding: 20px;
@@ -129,11 +130,15 @@
     border-radius: 20px;
     box-shadow: 2px 2px 2px #949292; }
 
+@media screen and (min-width: 768px) {
+  .acerca-p {
+    font-size: 1em; } }
 @media screen and (min-width: 992px) {
   .acerca {
     margin: 0px 67px 10px 67px; }
     .acerca .acerca-p {
-      margin: 30px 60px 30px 60px; } }
+      margin: 30px 60px 30px 60px;
+      font-size: 1.2em; } }
 .contentSoporte .imgHerramienta {
   margin: 15px;
   border-radius: 10px;
@@ -166,8 +171,11 @@
       height: 90px; }
 
 @media screen and (min-width: 992px) {
-  .contentSoporte {
-    width: 600px;
+  .contentSoporte .imgHerramienta {
+    width: 500px;
+    margin: 25px auto; }
+  .contentSoporte .banner {
+    width: 900px;
     margin: auto; }
     .contentSoporte .banner h2 {
       font-size: 3vw; }

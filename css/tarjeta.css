@@ -29,17 +29,16 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
     gap: 10px;
     padding: 6%;
-    
 }
 
 .targeta{
     display: grid;
-    grid-template-rows: 110px 40px;
+    grid-template-rows: 135px 60px;
     justify-items: center;
     width: 150px;
     height: 150px;
-    /* background-color: #122a68; */
-    border-radius: 10px;
+   /*  background-color: #122a68;
+    border-radius: 10px; */
     flex: 1 1 150px;
 }
 
@@ -60,34 +59,67 @@
 
 .barra{
     display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
     align-self: center;
-    width: 130px;
-    height: 21px;
-    background-color: coral;
-    box-shadow: 4px 4px 4px rgba(22, 17, 17, 0.7);
-    border-radius: 10px;
-    border-style: none;
-}
-
-.barraInterna{
-    display: grid;
-    align-self: center;
-    width: 100px;
-    height: 21px;
-    background-color: #50cdff;
-    border-radius: 10px;
-    border-style: none;
-}
-
-.barraInterna span{
-    color: white;
-    font-size: 12px;
-    margin-top: 4px;
-    margin-left: 60px;
+    justify-content: center;
+    /* background-color: #0095F0; */
+    /* background-color: bisque; */
 }
 
 .barraP{
     font-size: 0;
+}
+
+/* BARRAS DE PROGRESO */
+progress[value]{
+    /* Eliminar la apariencia por defecto */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* quito borde de firefox */
+    border: none;
+
+    /* añado estilos */
+    width: 130px;
+    height: 21px;
+    overflow: hidden;
+
+    background-color: coral;
+    border-radius: 20px;
+
+    color: black;
+
+    box-shadow: 4px 4px 4px rgba(22, 17, 17, 0.7);
+}
+
+progress::-moz-progress-bar{
+    background:  #0095F0;
+    border-radius : 20px;
+}
+
+progress::-webkit-progress-value{
+    background:  #0095F0;
+    border-radius : 20px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: coral;
+    box-shadow: 0 2px 5px rgba(216, 212, 212, 0.25) inset; /*esta sombra es para simular el borde que he aplicado arriba para Mozilla*/
+    border-radius : 20px ;         
+}
+
+.porcentaje{
+    position: relative;
+    left:5%;
+    top: -25px;
+    color: #e2e2e2;
+    text-align: center;
+}
+
+.porcentaje-css{
+    left: 10%;
 }
 
 /* .descripcionP{
@@ -139,34 +171,38 @@
     .logoT img{
         width: 110px;
         height: 200px;
-    }
-
-    .barra{
-        width: 225px;
-        height: 85px;
-        background-color: coral;
-    }
-
-    .barraInterna{
-        width: 225px;
-        height: 85px;
-        background-color: coral;
-        border-radius: 10px;
-        border-style: none;
-    }
-    .barraInterna span{
-        font-size: 0px;
-    }
-    
-    .barraP{
-        font-size: 1.5vw;
-        text-shadow: 2px 2px 4px  rgba(22, 17, 17, 0.7);
-        text-align: center;
-        color: #e2e2e2;
-    }
-
+    }   
+   
     .diseñoC{
         width: 100px;
         height: 100px;  
     }
+
+    progress[value]{
+        width: 200px;
+        height: 25px;
+       /*  overflow: hidden; */
+    }
+
+    .porcentaje{
+        top: -30px;
+    }
+
+    .barra{
+        grid-template-rows: 30px 0px 50px; 
+    }
+
+    /* .targeta{
+        margin: 0;
+    } */
+    
+    .barraP{
+        color: #6d6b6b;
+        padding: 0;
+        margin: 0;
+        font-size: 1.8vw; 
+        text-align: center;
+        text-shadow: 2px 4px 4px #949292;
+    }
+
 }
