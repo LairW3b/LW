@@ -41,9 +41,13 @@
 
 @media screen and (min-width:992px) {
     .contentSoporte{
-        width: 600px;
-        margin: auto;
+        .imgHerramienta{
+            width: 500px;
+            margin: 25px auto;
+        }
         .banner{
+            width: 900px;
+            margin: auto;
             h2{
                 font-size: 3vw;
             }
