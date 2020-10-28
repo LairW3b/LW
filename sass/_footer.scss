@@ -1,11 +1,17 @@
 .foot{
     display: grid;
-    grid-template-columns: 160px auto;
+    grid-template-rows: 1fr 80px;
     justify-items: center;
     align-items: center;
     background-color: $principal;
+    .contenedor-iconos{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-items: center;
+        align-items: center;
+    }
     p{
-        font-size: 4.5vw;
+        font-size: 5vw;
         text-align: center;
         color: #ffffff;
         margin-left: 10%;
@@ -14,13 +20,19 @@
        display: flex;
        flex-wrap: wrap;
        list-style: none;
+       justify-content: space-around;
+       align-items: center;
        gap: 25px;
+       margin-left: 50px;
        padding: 10%;
-       img{
-           width: 50px;
-       }
+      
     }
-
+    .correo{
+        justify-content: center;
+        p{
+             font-size: 1.3em;
+        }
+    }
     .icon{
         font-size: 3em;
         color: $base;
@@ -32,20 +44,15 @@
 
 }
 
-@media screen and (min-width:576px) {
-    .foot{
-        grid-template-columns: 206px auto;
+@media screen and (min-width:768px) {
+    .footerUL{
+        justify-content: space-between;
+        .li-footer{
+            margin: 10px;
+            font-size: 20px;
+        }
     }
-}
-
-@media screen and (min-width:700px) {
-    .foot{
-        grid-template-columns: 280px auto;
-    }
-}
-
-@media screen and (min-width:992px) {
-    .foot{
-        grid-template-columns: 600px auto;
+    .correo{
+        font-size: 20px;
     }
 }

@@ -6,11 +6,9 @@
     gap: 10px;
     .contenedorProyecto{
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: 2fr 1fr;
         gap: 10px;
-        padding: 2.5%;
-        //background-color: $principal;
-        //box-shadow: 5px 5px 8px rgb(205, 206, 206), -5px -5px 8px rgb(149, 150, 150);
+        padding: 2.5%;       
         justify-content: center;
         align-items: center;
         text-decoration: none;
@@ -21,15 +19,26 @@
         }
         .portafolioImg{
             width: 100%;
-            max-width: 220px;
-            height: 150px;
-            border-radius: 5px;
+            border-radius: 10px;
         }
         .textoPortafolio{
             color:#6d6b6b;
-            font-size: 5vw;
+            font-size: 7vw;
             text-align: center;
             text-shadow: 2px 2px 2px #949292;
+        }
+    }
+}
+
+@media screen and (min-width:750px){
+    .contentPortafolio{
+        flex-wrap: nowrap;
+        .contenedorProyecto{
+            grid-template-rows: 200px 80px;
+            padding-top: 2%;
+            .textoPortafolio{
+                font-size: 3vw;
+            }
         }
     }
 }
@@ -37,6 +46,9 @@
 @media screen and (min-width:992px) {
     .portafolio{
         margin: 0px 67px 10px 67px;
-        
+        .contenedorProyecto{
+            grid-template-rows: 260px 80px;
+            padding-top: 2%;
+        }
     }
 }
