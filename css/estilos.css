@@ -185,65 +185,37 @@
     .itemCel img {
       width: 280px;
       height: 290px; } }
-.portafolio .contentPortafolio {
+.contentPortafolio {
   display: flex;
   flex-wrap: wrap;
-  margin: 5%; }
-  .portafolio .contentPortafolio .contenedorProyecto {
+  margin: 5%;
+  justify-content: center;
+  gap: 10px; }
+  .contentPortafolio .contenedorProyecto {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     gap: 10px;
     padding: 2.5%;
-    /* margin: 15px; */
-    border-radius: 10px;
-    background-color: #28375C;
-    box-shadow: 5px 5px 8px #959696, -5px -5px 8px #959696;
     justify-content: center;
     align-items: center;
-    /* flex: 1 1 150px; */
-    /* .briefcase{
-         filter: drop-shadow(4px 4px 4px rgba(31, 30, 30, 0.7)); 
-         max-width: 80%;
-         margin-left: 9.5%;
-     } */ }
-    .portafolio .contentPortafolio .contenedorProyecto:hover {
-      background-color: #2a3135; }
-    .portafolio .contentPortafolio .contenedorProyecto .cardImg .imgProyecto {
-      /* width: 200px; */
-      max-width: 100%;
-      min-height: 200px;
-      border-radius: 10px; }
-    .portafolio .contentPortafolio .contenedorProyecto .descripcion {
-      color: white;
-      text-shadow: 2px 4px 4px #444343;
-      text-align: center; }
-      .portafolio .contentPortafolio .contenedorProyecto .descripcion a {
-        text-decoration: none;
-        color: white;
-        font-size: 5vw; }
-.portafolio .btnMore {
-  background-color: #122a68;
-  width: 500px;
-  height: 50px;
-  margin: 30px;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 3px 3px #2e4e6b;
-  margin: auto;
-  margin-top: 30px; }
-  .portafolio .btnMore a {
     text-decoration: none;
-    color: #ffffff; }
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px #b9b8b8, -5px -5px 8px #faf6f6; }
+    .contentPortafolio .contenedorProyecto:hover {
+      box-shadow: 5px 5px 8px #b9b8b8 inset, -5px -5px 8px #faf6f6 inset; }
+    .contentPortafolio .contenedorProyecto .portafolioImg {
+      width: 100%;
+      max-width: 220px;
+      height: 150px;
+      border-radius: 5px; }
+    .contentPortafolio .contenedorProyecto .textoPortafolio {
+      color: #6d6b6b;
+      font-size: 5vw;
+      text-align: center;
+      text-shadow: 2px 2px 2px #949292; }
 
 @media screen and (min-width: 992px) {
   .portafolio {
-    margin: 0px 67px 10px 67px; }
-    .portafolio .cardImg {
-      /* background-color: #ffffff; */
-      width: 400px;
-      height: 400px; }
-      .portafolio .cardImg .imgProyecto {
-        width: 400px;
-        height: 400px; } }
+    margin: 0px 67px 10px 67px; } }
 
 /*# sourceMappingURL=estilos.css.map */
