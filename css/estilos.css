@@ -85,12 +85,17 @@
     margin: 0px 67px 10px 67px; } }
 .foot {
   display: grid;
-  grid-template-columns: 160px auto;
+  grid-template-rows: 1fr 80px;
   justify-items: center;
   align-items: center;
   background-color: #28375C; }
+  .foot .contenedor-iconos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    align-items: center; }
   .foot p {
-    font-size: 4.5vw;
+    font-size: 5vw;
     text-align: center;
     color: #ffffff;
     margin-left: 10%; }
@@ -98,10 +103,15 @@
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    justify-content: space-around;
+    align-items: center;
     gap: 25px;
+    margin-left: 50px;
     padding: 10%; }
-    .foot .footerUL img {
-      width: 50px; }
+  .foot .correo {
+    justify-content: center; }
+    .foot .correo p {
+      font-size: 1.3em; }
   .foot .icon {
     font-size: 3em;
     color: #e2e2e2;
@@ -109,15 +119,15 @@
     .foot .icon:hover {
       color: #D04678; }
 
-@media screen and (min-width: 576px) {
-  .foot {
-    grid-template-columns: 206px auto; } }
-@media screen and (min-width: 700px) {
-  .foot {
-    grid-template-columns: 280px auto; } }
-@media screen and (min-width: 992px) {
-  .foot {
-    grid-template-columns: 600px auto; } }
+@media screen and (min-width: 768px) {
+  .footerUL {
+    justify-content: space-between; }
+    .footerUL .li-footer {
+      margin: 10px;
+      font-size: 20px; }
+
+  .correo {
+    font-size: 20px; } }
 .acerca-p {
   margin: 2em;
   text-align: justify;
@@ -193,7 +203,7 @@
   gap: 10px; }
   .contentPortafolio .contenedorProyecto {
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: 2fr 1fr;
     gap: 10px;
     padding: 2.5%;
     justify-content: center;
@@ -205,17 +215,26 @@
       box-shadow: 5px 5px 8px #b9b8b8 inset, -5px -5px 8px #faf6f6 inset; }
     .contentPortafolio .contenedorProyecto .portafolioImg {
       width: 100%;
-      max-width: 220px;
-      height: 150px;
-      border-radius: 5px; }
+      border-radius: 10px; }
     .contentPortafolio .contenedorProyecto .textoPortafolio {
       color: #6d6b6b;
-      font-size: 5vw;
+      font-size: 7vw;
       text-align: center;
       text-shadow: 2px 2px 2px #949292; }
 
+@media screen and (min-width: 750px) {
+  .contentPortafolio {
+    flex-wrap: nowrap; }
+    .contentPortafolio .contenedorProyecto {
+      grid-template-rows: 200px 80px;
+      padding-top: 2%; }
+      .contentPortafolio .contenedorProyecto .textoPortafolio {
+        font-size: 3vw; } }
 @media screen and (min-width: 992px) {
   .portafolio {
-    margin: 0px 67px 10px 67px; } }
+    margin: 0px 67px 10px 67px; }
+    .portafolio .contenedorProyecto {
+      grid-template-rows: 260px 80px;
+      padding-top: 2%; } }
 
 /*# sourceMappingURL=estilos.css.map */
